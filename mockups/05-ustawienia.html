@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ustawienia poziomów trudności</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;700;800&display=swap">
+<style>
+body{margin:0}
+a{color:#2A52D6}a:hover{color:#1B2440}
+input[type=radio],input[type=checkbox]{width:22px;height:22px;accent-color:#2A52D6;flex:none;margin:0}
+</style>
+</head>
+<body>
+<div style="min-height: 1240px; box-sizing: border-box; background: #F1F5FC; color: #1B2440; font-family: 'Nunito', sans-serif; font-size: 1rem; line-height: 1.5">
+<header style="background: #FFFFFF; border-bottom: 2px solid #D9E1F2">
+<div style="max-width: 1120px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px">
+<a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1B2440; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.5rem">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#2A52D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.6 7.6"></path><circle cx="11" cy="11" r="2"></circle></svg>
+Bystre Pióro
+</a>
+<nav aria-label="Główna" style="display: flex; flex-wrap: wrap; gap: 6px; font-weight: 800">
+<a href="#" style="padding: 10px 16px; border-radius: 12px; text-decoration: none">Start</a>
+<a href="#" style="padding: 10px 16px; border-radius: 12px; text-decoration: none">Moje wyniki</a>
+<a href="#" aria-current="page" style="padding: 10px 16px; border-radius: 12px; background: #E3EAFB; color: #1B2440; text-decoration: none">Ustawienia</a>
+</nav>
+</div>
+</header>
+
+<main style="max-width: 1120px; margin: 0 auto; padding: 32px 24px 56px; display: flex; flex-direction: column; gap: 28px">
+<div>
+<h1 style="margin: 0; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 2.5rem; line-height: 1.15">Poziom trudności</h1>
+<p style="margin: 4px 0 0; font-size: 1.125rem; color: #4A5573; font-weight: 700">Wybierz gotowy poziom albo dopasuj rundę po swojemu.</p>
+</div>
+
+<fieldset style="border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<legend style="position: absolute; width: 1px; height: 1px; overflow: hidden">Gotowe poziomy</legend>
+
+<label style="background: #FFFFFF; border: 3px solid #D9E1F2; border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 10px; cursor: pointer">
+<span style="display: flex; align-items: center; gap: 12px"><input type="radio" name="poziom"><span style="font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.75rem">Łatwy</span></span>
+<span style="font-weight: 800; color: #4A5573">Polecany dla 8–10 lat</span>
+<span>Wybór jednej z dwóch liter w krótkich, znanych słowach.</span>
+<span style="font-weight: 700">10 pkt za odpowiedź · bez limitu czasu · 5 żyć · podpowiedzi za darmo</span>
+</label>
+
+<label style="background: #E3EAFB; border: 3px solid #2A52D6; border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 10px; cursor: pointer">
+<span style="display: flex; align-items: center; gap: 12px"><input type="radio" name="poziom" checked><span style="font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.75rem">Średni</span><span style="margin-left: auto; padding: 4px 12px; border-radius: 999px; background: #2A52D6; color: #FFFFFF; font-weight: 800; font-size: 0.875rem">Wybrany</span></span>
+<span style="font-weight: 800; color: #4A5573">Polecany dla 10–12 lat</span>
+<span>Luki w zdaniach i wybór poprawnego zapisu spośród trzech.</span>
+<span style="font-weight: 700">15 pkt za odpowiedź · 30 s na zadanie · 3 życia · podpowiedź −5 pkt</span>
+</label>
+
+<label style="background: #FFFFFF; border: 3px solid #D9E1F2; border-radius: 24px; padding: 22px; display: flex; flex-direction: column; gap: 10px; cursor: pointer">
+<span style="display: flex; align-items: center; gap: 12px"><input type="radio" name="poziom"><span style="font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.75rem">Trudny</span></span>
+<span style="font-weight: 800; color: #4A5573">Polecany dla 12–14 lat</span>
+<span>Wpisywanie całych słów, wyjątki od zasad i krótkie dyktanda.</span>
+<span style="font-weight: 700">25 pkt za odpowiedź · 15 s na zadanie · 3 życia · bez podpowiedzi</span>
+</label>
+</fieldset>
+
+<section style="background: #FFFFFF; border: 2px solid #D9E1F2; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.75rem">Dopasuj rundę</h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 800">Liczba zadań w rundzie
+<select style="min-height: 48px; padding: 0 12px; border: 2px solid #7C869E; border-radius: 12px; background: #FFFFFF; color: #1B2440; font-family: inherit; font-size: 1rem; font-weight: 700"><option>5 zadań</option><option selected>10 zadań</option><option>15 zadań</option><option>20 zadań</option></select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 800">Czas na jedno zadanie
+<select style="min-height: 48px; padding: 0 12px; border: 2px solid #7C869E; border-radius: 12px; background: #FFFFFF; color: #1B2440; font-family: inherit; font-size: 1rem; font-weight: 700"><option>Bez limitu</option><option>45 sekund</option><option selected>30 sekund</option><option>15 sekund</option></select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 800">Liczba żyć
+<select style="min-height: 48px; padding: 0 12px; border: 2px solid #7C869E; border-radius: 12px; background: #FFFFFF; color: #1B2440; font-family: inherit; font-size: 1rem; font-weight: 700"><option>Bez limitu</option><option>5 żyć</option><option selected>3 życia</option><option>1 życie</option></select>
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 800">Podpowiedzi
+<select style="min-height: 48px; padding: 0 12px; border: 2px solid #7C869E; border-radius: 12px; background: #FFFFFF; color: #1B2440; font-family: inherit; font-size: 1rem; font-weight: 700"><option>Za darmo</option><option selected>Kosztują 5 pkt</option><option>Wyłączone</option></select>
+</label>
+</div>
+
+<fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px">
+<legend style="padding: 0; font-weight: 800; font-size: 1.125rem; margin-bottom: 12px">Zasady w rundzie</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>Ó czy U</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>RZ czy Ż</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>CH czy H</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>Ą, Ę, OM, EM</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox">NIE razem czy osobno</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox">Wielka i mała litera</label>
+</div>
+</fieldset>
+
+<fieldset style="border: 0; padding: 0; margin: 0">
+<legend style="padding: 0; font-weight: 800; font-size: 1.125rem; margin-bottom: 12px">Rodzaje zadań</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>Uzupełnij lukę</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox" checked>Wybierz poprawny zapis</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox">Wpisz całe słowo</label>
+<label style="min-height: 48px; padding: 0 16px; border: 2px solid #D9E1F2; border-radius: 14px; display: flex; align-items: center; gap: 12px; font-weight: 700; cursor: pointer"><input type="checkbox">Znajdź błąd w zdaniu</label>
+</div>
+</fieldset>
+
+<div style="background: #FFF1DD; border-radius: 18px; padding: 16px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px">
+<strong style="font-size: 1.125rem">Twoja runda: 10 zadań, do zdobycia 150 pkt + premie za serie</strong>
+<span style="font-weight: 700">Gwiazdki: 5 poprawnych — jedna, 7 — dwie, 9 — trzy</span>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<button type="button" style="flex: 1 1 240px; min-height: 60px; border: 0; border-radius: 16px; background: #2A52D6; color: #FFFFFF; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.375rem; cursor: pointer; box-shadow: 0 5px 0 #17307F">Zapisz ustawienia</button>
+<button type="button" style="flex: 0 1 280px; min-height: 60px; border: 3px solid #D9E1F2; border-radius: 16px; background: #FFFFFF; color: #1B2440; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 1.375rem; cursor: pointer">Przywróć poziom Średni</button>
+</div>
+</main>
+</div>
+</body>
+</html>
